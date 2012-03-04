@@ -1,0 +1,30 @@
+#app{
+	width: 180px;
+	margin: 100px auto 0 auto;
+}
+
+#keyboard-left {
+	float: left;
+}
+
+#b00{
+	width: 55px;
+}
+
+#keyboard-right{
+	float: left;
+}
+
+#plus-div{
+	height: 50px;
+	float: left;
+}
+
+#b-plus{
+	height: 50px;
+}
+
+#equal-div{
+	float: left;
+	width: 50px;
+}
