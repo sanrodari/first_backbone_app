@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title>Calculator backbone app</title>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>Calculator backbone app</title>
 
-	<link href="calculator_app.css" media="all" rel="stylesheet" type="text/css"/>
+        <link href="calculator_app.css" media="all" rel="stylesheet" type="text/css"/>
 
-    <script src="../libs/json2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://underscorejs.org/underscore.js"></script>
-    <script src="http://documentcloud.github.com/backbone/backbone.js"></script>
-    <script src="../libs/backbone-localstorage.js"></script>
-    <script src="calculator_app.js"></script>
+        <script src="../libs/json2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://underscorejs.org/underscore.js"></script>
+        <script src="http://documentcloud.github.com/backbone/backbone.js"></script>
+        <script src="../libs/backbone-localstorage.js"></script>
+        <script src="calculator_app.js"></script>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-	<div id="app">
+        <div id="app">
 
-		<div id="screen_panel">
-			<input id="screen" type="text" />			
-		</div>
+            <div id="screen_panel">
+                <input id="screen" type="text" />			
+            </div>
 
-<!--		789 % raiz-->
-<!--		456 x /-->
-<!--		123 + --->
-<!--		000 + =-->
-		<div id="keyboard-left">
+            <!--		789 % raiz-->
+            <!--		456 x /-->
+            <!--		123 + --->
+            <!--		000 + =-->
+            <div id="keyboard-left">
 
-			<div id="first-row">
-				<input id="b7" type="button" value="7" />
-				<input id="b8" type="button" value="8" />
-				<input id="b9" type="button" value="9" />
-			</div>
+                <div id="first-row">
+                    <input id="b7" type="button" value="7" />
+                    <input id="b8" type="button" value="8" />
+                    <input id="b9" type="button" value="9" />
+                </div>
 
-			<div id="second-row">
-				<input id="b4" type="button" value="4" />
-				<input id="b5" type="button" value="5" />
-				<input id="b6" type="button" value="6" />
-			</div>
+                <div id="second-row">
+                    <input id="b4" type="button" value="4" />
+                    <input id="b5" type="button" value="5" />
+                    <input id="b6" type="button" value="6" />
+                </div>
 
-			<div id="third-row">
-				<input id="b1" type="button" value="1" />
-				<input id="b2" type="button" value="2" />
-				<input id="b3" type="button" value="3" />
-			</div>
+                <div id="third-row">
+                    <input id="b1" type="button" value="1" />
+                    <input id="b2" type="button" value="2" />
+                    <input id="b3" type="button" value="3" />
+                </div>
 
-				<input id="b0" type="button" value="0" />
-				<!-- De dos columnas-->
-				<input id="b00" type="button" value="00" />
-			
-		</div>
+                <input id="b0" type="button" value="0" />
+                <!-- De dos columnas-->
+                <input id="b00" type="button" value="00" />
 
-		<div id="keyboard-right">
+            </div>
 
-			<div id="first-row">
-				<input id="b_percentage" type="button" value="%" />
-				<input id="b_root" type="button" value="&#8730;" />
-			</div>
+            <div id="keyboard-right">
 
-			<div id="second-row">
-				<input id="b_multiply" type="button" value="X" />
-				<input id="b_divide" type="button" value="/" />
-			</div>
+                <div id="first-row">
+                    <input id="b_percentage" type="button" value="%" />
+                    <input id="b_root" type="button" value="&#8730;" />
+                </div>
 
-			<div id="plus-div">
-				<!-- De dos filas -->
-				<input id="b-plus" type="button" value="+" />
-			</div>
+                <div id="second-row">
+                    <input id="b_multiply" type="button" value="X" />
+                    <input id="b_divide" type="button" value="/" />
+                </div>
 
-			<div id="equal-div">
-				<input id="b_minus" type="button" value="-" />
-				<input id="b_equal" type="button" value="=" />
-			</div>
+                <div id="plus-div">
+                    <!-- De dos filas -->
+                    <input id="b-plus" type="button" value="+" />
+                </div>
 
-		</div>
+                <div id="equal-div">
+                    <input id="b_minus" type="button" value="-" />
+                    <input id="b_equal" type="button" value="=" />
+                </div>
 
-	</div>
-	
-</body>
+            </div>
+
+        </div>
+
+    </body>
 
 </html>
