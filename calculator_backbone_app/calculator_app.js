@@ -2,14 +2,24 @@
 $(function(){
     
     window.FirstOperand = Backbone.Model.extend({
-        value: 0,
-        isSet: false
+        defaults: function() { 
+            return { 
+                value: 0,
+                isSet: false
+            }
+        }
     });
+    window.FirstOperandI = new FirstOperand;
     
     window.SecondOperand = Backbone.Model.extend({
-        value: 0,
-        isSet: false
+        defaults: function() { 
+            return { 
+                value: 0,
+                isSet: false
+            }
+        }
     });
+    window.SecondOperandI = new SecondOperand;
     
     window.Result = Backbone.Model.extend({
         defaults: function() { 
@@ -19,11 +29,14 @@ $(function(){
             }
         }
     });
-    
     window.ResultI = new Result;
     
     window.KeyModel = Backbone.Model.extend({
-        value: 0
+        defaults: function() { 
+            return { 
+                value: 0
+            }
+        }
     });
     
     window.Key = Backbone.View.extend({
@@ -42,12 +55,20 @@ $(function(){
         
     });
     
-    window.KeyI = new Key(
-        {
-            el:  $('#b7'),
-            model: new KeyModel({value: 7})
-        }
-    ); 
+    var configureKey = function(suffix){
+        new Key(
+            {
+                el:  $('#b' + suffix.toString()),
+                model: new KeyModel({value: suffix})
+            }
+        ); 
+    };
+    
+    _.each(_.range(0, 9), function(i){
+        configureKey(i);
+    });
+    
+    configureKey('00');
     
     window.Screen = Backbone.View.extend({
         
